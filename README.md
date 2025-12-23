@@ -2,6 +2,8 @@
 
 A lightweight, automated Windows batch wrapper for **yt-dlp**.  
 Designed to simplify the command-line experience, allowing users to download videos, playlists, and entire channels in the highest available quality with a single click.
+<img width="855" height="766" alt="14-10-36" src="https://github.com/user-attachments/assets/d3d07728-02d1-4381-86e5-3d286d21648d" />
+
 
 ## ✨ Key Features
 
