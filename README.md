@@ -1,30 +1,40 @@
-# simple-youtubeandbilibili-downloader
-A Windows batch video downloader based on yt-dlp. Supports single videos, playlists, collections, and entire channels. Automatically downloads the best available quality and saves subtitles (embedded first, auto-generated as fallback). Simple, reliable, and suitable for batch archiving.
-Here is a professional English translation of the provided text:
-***
-First-Time Use Guide (Installation)
+# 📽️ Smart Video Downloader
 
-To ensure the tool runs properly and to produce the highest quality video output, please make sure the directory contains the following core components (due to copyright and updates, this repository does not provide them directly):
+A lightweight, automated Windows batch wrapper for **yt-dlp**.  
+Designed to simplify the command-line experience, allowing users to download videos, playlists, and entire channels in the highest available quality with a single click.
 
-1. Download the core programs
-1) yt-dlp.exe (required):  
-   Visit the official yt-dlp release page at https://github.com/yt-dlp/yt-dlp/releases/latest and download yt-dlp.exe.
+## ✨ Key Features
 
-2) ffmpeg.exe (highly recommended):  
-   Used to merge separate video and audio streams into an MP4. Without it, high-quality video may be silent or show black frames.  
-   Visit FFmpeg Builds at https://github.com/yt-dlp/FFmpeg-Builds/releases/latest and download ffmpeg-master-latest-win64-gpl.zip. After extracting, locate ffmpeg.exe in the bin folder.
-
-2. Place the files
-Place the downloaded yt-dlp.exe and ffmpeg.exe directly in the same folder as this tool (downloader.bat).
-
-✅ Final folder structure should look like this:
-📂 Your folder/
-├── 📄 downloader.bat  (this tool)
-├── ⚙️ yt-dlp.exe      (the one you downloaded)
-└── ⚙️ ffmpeg.exe      (the one you downloaded)
-
-***
-
-Tip: If the video is premium content or requires login, please export cookies.txt and place it in the same directory as well.
+* **📺 All-in-One Downloading**: Seamlessly supports **individual videos**, **playlists**, **collections**, and **entire channels**.
+* **💎 Best Quality Assurance**: Automatically selects and merges the best available video and audio streams (supports 4K/8K) into a standard **MP4** container.
+* **📝 Intelligent Subtitles**: Automatically extracts official and auto-generated subtitles (en/zh), converts them to **SRT** format, and embeds them.
+* **🚀 Optimized for YouTube & Bilibili**: Includes specific parsing logic for major platforms to ensure stable downloads.
+* **🍪 Member Access**: Supports `cookies.txt` for downloading age-restricted or premium content.
 
 ---
+
+## ⚙️ Installation & Dependencies
+
+To ensure the tool functions correctly (especially for high-resolution video merging), you must download the core dependencies manually.
+
+**Due to rapid updates and licensing, binaries are not included in this repository.**
+
+### Step 1: Download Core Components
+
+1.  **yt-dlp.exe** (Required)  
+    Download the latest release from the [official yt-dlp repository](https://github.com/yt-dlp/yt-dlp/releases/latest).
+
+2.  **ffmpeg.exe** (Highly Recommended)  
+    *Required for merging separate video and audio streams into MP4.* Download from [FFmpeg Builds](https://github.com/yt-dlp/FFmpeg-Builds/releases/latest) (choose `ffmpeg-master-latest-win64-gpl.zip`). Extract the zip and find `ffmpeg.exe` inside the `bin` folder.
+
+### Step 2: Setup Directory
+
+Place both `yt-dlp.exe` and `ffmpeg.exe` in the **same folder** as `downloader.bat`.
+
+Your folder structure should look like this:
+
+```text
+📂 Your-Folder/
+├── 📄 downloader.bat   <-- This Tool
+├── ⚙️ yt-dlp.exe       <-- Downloaded manually
+└── ⚙️ ffmpeg.exe       <-- Downloaded manually
